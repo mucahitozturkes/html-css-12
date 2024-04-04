@@ -1,0 +1,114 @@
+:root {
+--cyan: hsl(185, 75%, 39%);
+--desaturated-blue: hsl(229, 23%, 23%);
+--grayish-blue: hsl(227, 10%, 46%);
+--gray: hsl(0, 0%, 59%);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: "Kumbh Sans";
+}
+
+body {
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+    min-height: 100vh;
+    background-color: var(--cyan);
+   
+}
+
+.main {
+    max-width: 350px;
+    height: 375px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    z-index: 3;
+}
+
+.mid-bottom >* {
+    margin-bottom: 2rem;
+}
+
+.top {
+    display: grid;
+    justify-items: center;
+    place-content: center;
+}
+
+.top-image {
+    margin-top: -3.4rem;
+    border-radius: 50%;
+    border: 0.4rem solid white;
+}
+
+.name {
+    margin-top: 1.5rem;
+}
+
+.name-age {
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+h4 {
+    margin-left: 1rem;
+}
+
+.name span {
+    display: flex;
+    place-content: center;
+    margin-top: 1rem;
+}
+
+hr {
+    border: 1px solid rgba(139, 143, 147, 0.148);
+}
+
+.mid-bottom {
+    background-color: white;
+    height: 100%;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3rem;
+
+}
+
+.infos-inside {
+    display: grid;
+   text-align: center;
+}
+
+h5 {
+    margin-top: .1rem;
+}
+
+.bg-img-top {
+    position: absolute;
+    width: 800px;
+    margin-left: -120px;
+    margin-top: -400px;
+    z-index: 1;
+}
+
+.bg-img-bottom {
+    position: absolute;
+    width: 800px;
+    bottom: 0;
+    margin-right: -50px;
+    margin-bottom: -500px;
+    right: 0;
+    z-index: 0;
+}
